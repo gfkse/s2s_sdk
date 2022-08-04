@@ -20,7 +20,7 @@ let package = Package(
         .binaryTarget(
              name: "s2s_sdk_ios",
              url:
-               "https://s3.eu-central-1.amazonaws.com/download.sensic.net/s2s/sdk/ios/testing/1/s2s_sdk_ios_2.zip",
+               "https://s3.eu-central-1.amazonaws.com/download.sensic.net/s2s/sdk/ios/testing/1/s2s_sdk_ios_1.zip",
              checksum: "2271f1f11ff1e7f49b3194a822896b53e19be526c520dd0670d182dc72673262"
            ),
 
