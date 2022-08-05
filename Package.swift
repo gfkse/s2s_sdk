@@ -21,7 +21,7 @@ let package = Package(
              name: "s2s_sdk_ios",
              url:
                "https://s3.eu-central-1.amazonaws.com/download.sensic.net/s2s/sdk/ios/testing/1/s2s_sdk_ios_1.zip",
-             checksum: "4d8eccf709b63cb70d941368f43c8c6dca096fa7ea7fef183b67fd806c225da8"
+             checksum: "1f80f04bdbd8cfdd546dd322f04ca694ccddef3e065fb82a5d9fec0d01214fde"
            ),
 
     ]
