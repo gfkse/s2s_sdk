@@ -10,7 +10,6 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "S2S_SDK",
-            type: .dynamic,
             targets: ["s2s_sdk_ios"])
     ],
     dependencies: [
@@ -22,7 +21,7 @@ let package = Package(
              name: "s2s_sdk_ios",
              url:
                "https://s3.eu-central-1.amazonaws.com/download.sensic.net/s2s/sdk/ios/testing/1/s2s_sdk_ios_1.zip",
-             checksum: "dade3daa00a0d11eba4f6190e543de315be5361585bebd2b77918d2d1f87273e"
+             checksum: "4d8eccf709b63cb70d941368f43c8c6dca096fa7ea7fef183b67fd806c225da8"
            ),
 
     ]
