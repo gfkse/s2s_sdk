@@ -7,22 +7,28 @@ let package = Package(
     name: "S2S_SDK",
     platforms: [.iOS(.v9)],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "S2S_SDK",
-            targets: ["s2s_sdk_ios"])
-    ],
-    dependencies: [
+            targets: ["S2S_SDK"]
+        )
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on
+        .target(
+            name: "S2S_SDK",
+            dependencies: [
+                "s2s_sdk_ios",
+                "GoogleInteractiveMediaAds"
+            ]
+        ),
         .binaryTarget(
-             name: "s2s_sdk_ios",
-             url:
-               "https://s3.eu-central-1.amazonaws.com/download.sensic.net/s2s/sdk/ios/testing/1/s2s_sdk_ios_1.zip",
-             checksum: "7adc094d6a6233366fd72d076aa2812f89b3a83cb9fa8da0aae79c0ba7b96e4d"
-           ),
-
+            name: "s2s_sdk_ios",
+            url: "https://s3.eu-central-1.amazonaws.com/download.sensic.net/s2s/sdk/ios/1.15.2/s2s_sdk_ios_1.15.2.zip",
+            checksum: "5a9ae9d0a6a40995ecd7146024dd156cc130b41a7aef3e0780b3d97f97e01f8b"
+        ),
+        .binaryTarget(
+            name: "GoogleInteractiveMediaAds",
+            url: "https://imasdk.googleapis.com/native/downloads/ima-ios-v3.18.4.zip",
+            checksum: "2ca30c7ea01452dd8b522376729831c89b449283aeecba165f6b3e748af80c41"
+        )
     ]
 )
